@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "CircleGestureRecognizer.h"
+#import "CircleGestureRecognizerView.h"
 
 @interface ViewController ()
 
@@ -18,12 +20,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    CircleGestureRecognizer *recognizer = [[CircleGestureRecognizer alloc] initWithTarget:self action:@selector(recognized:) andCircleCenter:self.view.center];
+    recognizer.timeout = 1.5;
+    recognizer.direction = CircleGestureRecognizerDirectionCounterClockwise;
+    recognizer.toleranceAngle = M_PI_4;
+    
+    CircleGestureRecognizerView *myView = [[CircleGestureRecognizerView alloc] initWithFrame:self.view.bounds andCircleGestureRecognizer:recognizer];
+    [self.view addSubview:myView];
+    [myView addGestureRecognizer:recognizer];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)recognized:(CircleGestureRecognizer *)recognizer {
+    NSLog(@"Circle gesture successfully recognized");
 }
 
 @end

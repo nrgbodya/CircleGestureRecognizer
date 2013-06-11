@@ -18,6 +18,8 @@
 		9A4613D71765F2DF00B3C16D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4613D61765F2DF00B3C16D /* Default-568h@2x.png */; };
 		9A4613DA1765F2DF00B3C16D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4613D91765F2DF00B3C16D /* ViewController.m */; };
 		9A4613DD1765F2DF00B3C16D /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4613DB1765F2DF00B3C16D /* ViewController.xib */; };
+		9A4613E51765F39300B3C16D /* CircleGestureRecognizerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4613E41765F39300B3C16D /* CircleGestureRecognizerView.m */; };
+		9A4613E81765F4CB00B3C16D /* CircleGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4613E71765F4CB00B3C16D /* CircleGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		9A4613D81765F2DF00B3C16D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9A4613D91765F2DF00B3C16D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9A4613DC1765F2DF00B3C16D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		9A4613E31765F39300B3C16D /* CircleGestureRecognizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleGestureRecognizerView.h; sourceTree = "<group>"; };
+		9A4613E41765F39300B3C16D /* CircleGestureRecognizerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleGestureRecognizerView.m; sourceTree = "<group>"; };
+		9A4613E61765F4CB00B3C16D /* CircleGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleGestureRecognizer.h; sourceTree = "<group>"; };
+		9A4613E71765F4CB00B3C16D /* CircleGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,9 @@
 				9A4613D81765F2DF00B3C16D /* ViewController.h */,
 				9A4613D91765F2DF00B3C16D /* ViewController.m */,
 				9A4613DB1765F2DF00B3C16D /* ViewController.xib */,
+				9A4613E31765F39300B3C16D /* CircleGestureRecognizerView.h */,
+				9A4613E41765F39300B3C16D /* CircleGestureRecognizerView.m */,
+				9A9C803A176775360017209E /* Recognizer */,
 				9A4613C71765F2DF00B3C16D /* Supporting Files */,
 			);
 			path = CircleGestureRecognizerDemo;
@@ -105,6 +114,15 @@
 				9A4613D61765F2DF00B3C16D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A9C803A176775360017209E /* Recognizer */ = {
+			isa = PBXGroup;
+			children = (
+				9A4613E61765F4CB00B3C16D /* CircleGestureRecognizer.h */,
+				9A4613E71765F4CB00B3C16D /* CircleGestureRecognizer.m */,
+			);
+			name = Recognizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +194,8 @@
 				9A4613CD1765F2DF00B3C16D /* main.m in Sources */,
 				9A4613D11765F2DF00B3C16D /* AppDelegate.m in Sources */,
 				9A4613DA1765F2DF00B3C16D /* ViewController.m in Sources */,
+				9A4613E51765F39300B3C16D /* CircleGestureRecognizerView.m in Sources */,
+				9A4613E81765F4CB00B3C16D /* CircleGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +318,7 @@
 				9A4613E21765F2DF00B3C16D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
