@@ -8,7 +8,8 @@ You can adjust its direction (clockwise or counter clockwise), timeout (maximal 
 Adding circle gesture recognizer to your project
 ======================================
 
-Copy CircleGestureRecognizer.h and CircleGestureRecognizer.m to your project. Use the -(id)initWithTarget:(id)target action:(SEL)action andCircleCenter:(CGPoint)circleCenter; method to initiate a recognizer instance.
+Copy CircleGestureRecognizer.h and CircleGestureRecognizer.m to your project. 
+Use the convenience initializer.
 
 Screenshot of demo
 ================
