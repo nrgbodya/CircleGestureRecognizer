@@ -5,6 +5,10 @@ This gesture recognizer does recognize circle gestures.
 
 You can adjust its direction (clockwise or counter clockwise), timeout (maximal gesture duration), position of the center, around which the circle gesture should be recognized and tolerance angle, which means basically tolerance for matching start angle and end angle.
 
+Important:
+
+It is not necessary to start the circle gesture in the yellow sector. It's just for visualizing the tolerance angle for matching startAngle and endAngle.
+
 Adding circle gesture recognizer to your project
 ======================================
 
